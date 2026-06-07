@@ -37,28 +37,34 @@ text-decoration:none;
 .hero{
 position:relative;
 overflow:hidden;
-height:90vh;
+min-height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+padding:120px 20px 80px;
 }
 
 .hero h1{
-font-size:72px;
+font-size:64px;
 font-weight:800;
 line-height:1.1;
+margin-bottom:20px;
 z-index:2;
 }
-
-.hero p{
+..hero p{
 font-size:22px;
-max-width:800px;
+max-width:900px;
 margin-top:20px;
 margin-bottom:35px;
-z-index:2;
+padding:30px;
+
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.1);
+backdrop-filter:blur(20px);
+
+border-radius:20px;
 }
 
 .hero-buttons{
