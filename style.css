@@ -221,3 +221,11 @@ margin:0;
 margin-top:10px;
 color:gray;
 }
+.owner-name{
+    color:#22d3ee;
+    font-size:24px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
