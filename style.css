@@ -197,3 +197,27 @@ grid-template-columns:1fr;
 }
 
 }
+.subject-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.subject-card{
+background:white;
+padding:20px;
+border-radius:15px;
+text-decoration:none;
+color:black;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.subject-card h3{
+margin:0;
+}
+
+.subject-card p{
+margin-top:10px;
+color:gray;
+}
