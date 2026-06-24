@@ -295,3 +295,83 @@ font-size:36px;
     border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
+.semester-header{
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+    border-radius:0 0 30px 30px;
+}
+
+.semester-header h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.semester-header p{
+    font-size:20px;
+    opacity:0.9;
+}
+
+.subject-container{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+.subject-card{
+    background:white;
+    border-radius:25px;
+    padding:25px 35px;
+    margin-bottom:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.subject-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.subject-card h2{
+    color:#0f172a;
+    font-size:32px;
+}
+
+.pdf-btn{
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:12px;
+    font-weight:600;
+}
+
+.pdf-btn:hover{
+    background:#1d4ed8;
+}
+
+body{
+    background:#f3f8ff;
+}
+
+@media(max-width:768px){
+
+.subject-card{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+.subject-card h2{
+    font-size:24px;
+}
+
+.semester-header h1{
+    font-size:32px;
+}
+
+}
