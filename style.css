@@ -1,300 +1,128 @@
+/* ===== RESET ===== */
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
+/* ===== BODY ===== */
 body{
-background:#0f172a;
-color:white;
+    background:#f4f8fb;
+    color:#222;
+    min-height:100vh;
+    padding:30px;
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-background:#111827;
+/* ===== TITLE ===== */
+h1{
+    text-align:center;
+    color:#00bcd4;
+    margin-bottom:40px;
+    font-size:42px;
 }
 
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#00e5ff;
+/* ===== SEMESTER CONTAINER ===== */
+.semester-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
 }
 
-nav ul{
-display:flex;
-list-style:none;
-gap:20px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-}
-.hero{
-position:relative;
-overflow:hidden;
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:60px 20px 40px;
-    max-width: 950px;
-margin: 40px auto;
-border-radius: 25px;
-background: rgba(255,255,255,0.04);
-backdrop-filter: blur(20px);
-    border:1px solid rgba(255,255,255,0.08);
-}
-
-.hero h1{
-font-size:52px;
-font-weight:800;
-line-height:1.1;
-margin-bottom:20px;
-z-index:2;
-}
-..hero p{
-font-size:22px;
-max-width:900px;
-margin-top:20px;
-margin-bottom:35px;
-padding:30px;
-
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.1);
-backdrop-filter:blur(20px);
-
-border-radius:20px;
-}
-
-.hero-buttons{
-display:flex;
-gap:20px;
-z-index:2;
-}
-
-.btn{
-padding:16px 35px;
-background:#00e5ff;
-color:black;
-border-radius:12px;
-font-weight:bold;
-text-decoration:none;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-5px);
-}
-
-.btn2{
-padding:16px 35px;
-border:2px solid #00e5ff;
-color:#00e5ff;
-border-radius:12px;
-font-weight:bold;
-text-decoration:none;
-transition:.3s;
-}
-
-.btn2:hover{
-background:#00e5ff;
-color:black;
-}
-
-.glow{
-position:absolute;
-border-radius:50%;
-filter:blur(120px);
-}
-
-.glow1{
-width:300px;
-height:300px;
-background:#00e5ff;
-top:100px;
-left:-100px;
-opacity:.25;
-}
-
-.glow2{
-width:300px;
-height:300px;
-background:#00ff95;
-bottom:50px;
-right:-100px;
-opacity:.20;
-}
-.
-.btn{
-padding:15px 35px;
-background:#00e5ff;
-color:black;
-text-decoration:none;
-font-weight:bold;
-border-radius:10px;
-}
-.semester-section{
-padding:100px 10%;
-}
-
-.semester-section h2{
-text-align:center;
-font-size:42px;
-margin-bottom:50px;
-color:#00e5ff;  
-}
-
-.semester-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:25px;
-}
-
-.card{
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.1);
-backdrop-filter:blur(20px);
-
-padding:30px;
-
-border-radius:20px;
-
-text-align:center;
-
-font-size:24px;
-font-weight:bold;
-
-color:white;
-text-decoration:none;
-
-transition:.4s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-
-border-color:#00e5ff;
-
-box-shadow:0 0 30px rgba(0,229,255,.4);
-}
-@media(max-width:900px){
-
-.semester-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.hero h1{
-font-size:45px;
-}
-
-}
-
-@media(max-width:600px){
-
-.semester-grid{
-grid-template-columns:1fr;
-}
-
-}
-.subject-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-padding:20px;
-}
-
+/* ===== SEMESTER CARD ===== */
 .semester-card{
     width:250px;
     height:150px;
-    background:#ffffff;
-    border:2px solid #00d4ff;
+    background:white;
     border-radius:20px;
+    text-decoration:none;
+    color:#222;
     display:flex;
     justify-content:center;
     align-items:center;
     font-size:28px;
     font-weight:bold;
-    color:#000000;   /* Black text */
-    text-decoration:none;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
     transition:0.3s;
+    border:2px solid #00bcd4;
 }
 
 .semester-card:hover{
-    transform:translateY(-8px);
-    background:#00d4ff;
+    background:#00bcd4;
     color:white;
+    transform:translateY(-8px);
+}
+
+/* ===== SUBJECT CARDS ===== */
+.subject-card{
+    display:block;
+    background:white;
+    color:#222;
+    text-decoration:none;
+    padding:20px;
+    margin:15px auto;
+    max-width:600px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.subject-card:hover{
+    background:#00bcd4;
+    color:white;
+    transform:scale(1.02);
 }
 
 .subject-card h3{
-margin:0;
+    margin-bottom:10px;
 }
 
-.subject-card p{
-margin-top:10px;
-color:gray;
-}
-.owner-name{
-    color:#22d3ee;
-    font-size:24px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:3px;
-    margin-bottom:15px;
-}
-body{
-    font-family: Arial, sans-serif;
-    background: #f4f7fc;
-    margin: 0;
-    padding: 20px;
+/* ===== WEEK LINKS ===== */
+a{
+    color:#0077cc;
 }
 
-h1{
-    text-align: center;
-    color: #0d47a1;
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+.week-link{
+    display:block;
+    background:white;
+    padding:15px;
+    margin:10px auto;
+    max-width:500px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#222;
+    border-left:5px solid #00bcd4;
 }
 
-.week-container{
-    max-width: 800px;
-    margin: auto;
+.week-link:hover{
+    background:#e8faff;
 }
 
-.week-card{
-    display: block;
-    text-decoration: none;
-    background: white;
-    color: #222;
-    padding: 18px;
-    margin: 15px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: 0.3s;
-    font-size: 20px;
-    font-weight: bold;
+/* ===== PDF BUTTON ===== */
+.pdf-btn{
+    display:inline-block;
+    background:#00bcd4;
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:8px;
+    margin-top:20px;
 }
 
-.week-card:hover{
-    background: #0d47a1;
-    color: white;
-    transform: translateY(-5px);
+.pdf-btn:hover{
+    background:#0097a7;
 }
 
-.week-no{
-    color: #1565c0;
-    font-size: 22px;
-}
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+    h1{
+        font-size:30px;
+    }
 
-.week-card:hover .week-no{
-    color: white;
+    .semester-card{
+        width:90%;
+        height:120px;
+        font-size:24px;
+    }
 }
