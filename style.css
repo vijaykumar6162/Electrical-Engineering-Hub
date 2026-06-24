@@ -1,128 +1,134 @@
-/* ===== RESET ===== */
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
-/* ===== BODY ===== */
 body{
-    background:#f4f8fb;
-    color:#222;
-    min-height:100vh;
-    padding:30px;
+background:#f4f7fc;
+color:#222;
 }
 
-/* ===== TITLE ===== */
-h1{
-    text-align:center;
-    color:#00bcd4;
-    margin-bottom:40px;
-    font-size:42px;
+.hero{
+background:linear-gradient(135deg,#0f172a,#2563eb);
+color:white;
+text-align:center;
+padding:100px 20px;
 }
 
-/* ===== SEMESTER CONTAINER ===== */
-.semester-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
 }
 
-/* ===== SEMESTER CARD ===== */
-.semester-card{
-    width:250px;
-    height:150px;
-    background:white;
-    border-radius:20px;
-    text-decoration:none;
-    color:#222;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:28px;
-    font-weight:bold;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
-    border:2px solid #00bcd4;
+.hero p{
+font-size:20px;
+max-width:900px;
+margin:auto;
+line-height:1.6;
 }
 
-.semester-card:hover{
-    background:#00bcd4;
-    color:white;
-    transform:translateY(-8px);
+.hero-buttons{
+margin-top:30px;
 }
 
-/* ===== SUBJECT CARDS ===== */
-.subject-card{
-    display:block;
-    background:white;
-    color:#222;
-    text-decoration:none;
-    padding:20px;
-    margin:15px auto;
-    max-width:600px;
-    border-radius:15px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    transition:0.3s;
+.btn,
+.btn2{
+display:inline-block;
+padding:14px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+margin:10px;
 }
 
-.subject-card:hover{
-    background:#00bcd4;
-    color:white;
-    transform:scale(1.02);
+.btn{
+background:#06b6d4;
+color:white;
 }
 
-.subject-card h3{
-    margin-bottom:10px;
+.btn2{
+background:white;
+color:#0f172a;
 }
 
-/* ===== WEEK LINKS ===== */
-a{
-    color:#0077cc;
+.stats{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding:50px 20px;
 }
 
-.week-link{
-    display:block;
-    background:white;
-    padding:15px;
-    margin:10px auto;
-    max-width:500px;
-    border-radius:10px;
-    text-decoration:none;
-    color:#222;
-    border-left:5px solid #00bcd4;
+.stat-box{
+background:white;
+width:200px;
+padding:25px;
+text-align:center;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
-.week-link:hover{
-    background:#e8faff;
+.stat-box h2{
+font-size:35px;
+color:#2563eb;
 }
 
-/* ===== PDF BUTTON ===== */
-.pdf-btn{
-    display:inline-block;
-    background:#00bcd4;
-    color:white;
-    padding:12px 20px;
-    text-decoration:none;
-    border-radius:8px;
-    margin-top:20px;
+.title{
+text-align:center;
+font-size:42px;
+margin:30px 0;
 }
 
-.pdf-btn:hover{
-    background:#0097a7;
+.semester-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+padding:20px;
 }
 
-/* ===== MOBILE ===== */
+.card{
+background:white;
+padding:35px;
+text-align:center;
+text-decoration:none;
+color:#111;
+font-size:24px;
+font-weight:bold;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#2563eb;
+color:white;
+}
+
+footer{
+margin-top:60px;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
 @media(max-width:768px){
-    h1{
-        font-size:30px;
-    }
 
-    .semester-card{
-        width:90%;
-        height:120px;
-        font-size:24px;
-    }
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.card{
+font-size:20px;
+}
+
 }
