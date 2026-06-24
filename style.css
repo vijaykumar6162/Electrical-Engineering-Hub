@@ -210,13 +210,27 @@ gap:20px;
 padding:20px;
 }
 
-.subject-card{
-background:white;
-padding:20px;
-border-radius:15px;
-text-decoration:none;
-color:black;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
+.semester-card{
+    width:250px;
+    height:150px;
+    background:#ffffff;
+    border:2px solid #00d4ff;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    font-weight:bold;
+    color:#000000;   /* Black text */
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.semester-card:hover{
+    transform:translateY(-8px);
+    background:#00d4ff;
+    color:white;
 }
 
 .subject-card h3{
