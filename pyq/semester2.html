@@ -1,45 +1,131 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2nd Semester PYQs</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+.header{
+background:linear-gradient(135deg,#0d6efd,#003b99);
+color:#fff;
+padding:40px 20px;
+text-align:center;
+}
+
+.header h1{
+font-size:38px;
+margin-bottom:10px;
+}
+
+.header p{
+font-size:18px;
+opacity:.9;
+}
+
+.container{
+max-width:1400px;
+margin:35px auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+border-radius:18px;
+padding:22px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h2{
+color:#0d6efd;
+margin-bottom:20px;
+font-size:24px;
+}
+
+.btn{
+display:block;
+text-align:center;
+background:#0d6efd;
+color:#fff;
+text-decoration:none;
+padding:14px;
+margin:12px 0;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#003b99;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
 <h1>📚 2nd Semester Previous Year Question Papers</h1>
 <p>Electrical Engineering - BEU</p>
-</header>
+</div>
 
 <div class="container">
-<div class="grid">
 
 <div class="card">
-<h3>📐 Engineering Mathematics-II</h3>
-<a href="#">📄 BEU 2025</a>
-<a href="#">📄 BEU 2024</a>
-<a href="#">📄 BEU 2023</a>
-</div>
-
-<div class="card">
-<h3>⚙ Engineering Mechanics</h3>
-<a href="#">📄 BEU 2025</a>
-<a href="#">📄 BEU 2024</a>
-<a href="#">📄 BEU 2023</a>
+<h2>📐 Engineering Mathematics-II</h2>
+<a class="btn" href="#">📄 BEU 2025</a>
+<a class="btn" href="#">📄 BEU 2024</a>
+<a class="btn" href="#">📄 BEU 2023</a>
 </div>
 
 <div class="card">
-<h3>🧪 Engineering Chemistry</h3>
-<a href="#">📄 BEU 2025</a>
-<a href="#">📄 BEU 2024</a>
-<a href="#">📄 BEU 2023</a>
+<h2>⚙ Engineering Mechanics</h2>
+<a class="btn" href="#">📄 BEU 2025</a>
+<a class="btn" href="#">📄 BEU 2024</a>
+<a class="btn" href="#">📄 BEU 2023</a>
 </div>
 
 <div class="card">
-<h3>💡 Basic Electronics Engineering</h3>
-<a href="#">📄 BEU 2025</a>
-<a href="#">📄 BEU 2024</a>
-<a href="#">📄 BEU 2023</a>
+<h2>🧪 Engineering Chemistry</h2>
+<a class="btn" href="#">📄 BEU 2025</a>
+<a class="btn" href="#">📄 BEU 2024</a>
+<a class="btn" href="#">📄 BEU 2023</a>
 </div>
 
 <div class="card">
-<h3>🌱 Environmental Science</h3>
-<a href="#">📄 BEU 2025</a>
-<a href="#">📄 BEU 2024</a>
-<a href="#">📄 BEU 2023</a>
+<h2>💡 Basic Electronics Engineering</h2>
+<a class="btn" href="#">📄 BEU 2025</a>
+<a class="btn" href="#">📄 BEU 2024</a>
+<a class="btn" href="#">📄 BEU 2023</a>
+</div>
+
+<div class="card">
+<h2>🌱 Environmental Science</h2>
+<a class="btn" href="#">📄 BEU 2025</a>
+<a class="btn" href="#">📄 BEU 2024</a>
+<a class="btn" href="#">📄 BEU 2023</a>
 </div>
 
 </div>
-</div>
+
+</body>
+</html>
