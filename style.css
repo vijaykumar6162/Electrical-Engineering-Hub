@@ -375,3 +375,37 @@ body{
 }
 
 }
+.pyq-card{
+    margin-top:30px;
+}
+
+.semester-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.semester-box{
+    background:#0d6efd;
+    color:white;
+    text-decoration:none;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.semester-box span{
+    font-size:45px;
+}
+
+.semester-box h3{
+    margin:12px 0;
+}
+
+.semester-box:hover{
+    transform:translateY(-8px);
+    background:#084298;
+}
