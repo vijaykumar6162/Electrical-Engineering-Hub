@@ -381,31 +381,32 @@ body{
 
 .semester-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:15px;
     margin-top:20px;
 }
-
 .semester-box{
     background:#0d6efd;
     color:white;
     text-decoration:none;
-    padding:20px;
-    border-radius:15px;
+    width:170px;
+    height:140px;
+    padding:15px;
+    border-radius:12px;
     text-align:center;
     transition:.3s;
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
 }
 
 .semester-box span{
-    font-size:45px;
+    font-size:32px;
 }
 
 .semester-box h3{
-    margin:12px 0;
+    margin:8px 0;
+    font-size:24px;
 }
 
-.semester-box:hover{
-    transform:translateY(-8px);
-    background:#084298;
+.semester-box p{
+    font-size:16px;
 }
