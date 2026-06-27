@@ -425,25 +425,92 @@ body{
     margin-bottom:15px;
 }
 
-.youtube-section p{
-    color:#555;
-    font-size:18px;
-    line-height:1.7;
+.youtube-section{
+padding:70px 20px;
+background:#f5f8ff;
 }
 
-.youtube-btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:14px 28px;
-    background:#ff0000;
-    color:#fff;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-    transition:.3s;
+.yt-card{
+max-width:1200px;
+margin:auto;
+display:flex;
+gap:40px;
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(0,0,0,.15);
 }
 
-.youtube-btn:hover{
-    background:#cc0000;
-    transform:scale(1.05);
+.yt-left{
+flex:1;
+}
+
+.yt-logo{
+width:90px;
+}
+
+.yt-left h2{
+font-size:38px;
+color:#0066ff;
+margin:15px 0;
+}
+
+.yt-left p{
+font-size:18px;
+line-height:1.8;
+color:#555;
+}
+
+.stats{
+display:flex;
+gap:30px;
+margin:30px 0;
+}
+
+.stats div{
+background:#f8f8f8;
+padding:20px;
+border-radius:15px;
+text-align:center;
+flex:1;
+}
+
+.stats h3{
+font-size:32px;
+color:red;
+}
+
+.subscribe-btn{
+display:inline-block;
+padding:18px 35px;
+background:red;
+color:white;
+font-size:20px;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.subscribe-btn:hover{
+transform:scale(1.05);
+background:#cc0000;
+}
+
+.yt-right{
+flex:1;
+}
+
+.banner{
+width:100%;
+border-radius:20px;
+margin-bottom:20px;
+}
+
+.feature-box{
+background:#0066ff;
+color:white;
+padding:18px;
+margin-bottom:15px;
+border-radius:15px;
+font-size:18px;
 }
