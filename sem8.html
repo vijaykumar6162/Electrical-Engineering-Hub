@@ -1,141 +1,76 @@
-/* ===========================
-   RESET
-=========================== */
+<!DOCTYPE html>
+<html lang="en">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
-}
+<head>
 
-body{
-background:#eef5ff;
-color:#222;
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* ===========================
-   HEADER
-=========================== */
+<title>Electrical Engineering - Semester 8</title>
 
-.semester-header{
-background:linear-gradient(135deg,#0f172a,#2563eb);
-color:#fff;
-text-align:center;
-padding:60px 20px;
-box-shadow:0 8px 25px rgba(0,0,0,.20);
-}
+<link rel="stylesheet" href="sem8.css">
 
-.semester-header h1{
-font-size:46px;
-margin-bottom:10px;
-}
+</head>
 
-.semester-header p{
-font-size:20px;
-opacity:.9;
-}
+<body>
 
-/* ===========================
-   SUBJECT GRID
-=========================== */
+<div class="semester-header">
 
-.subject-container{
-max-width:1200px;
-margin:50px auto;
-padding:0 20px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:25px;
-}
+<h1>🎓 Electrical Engineering - Semester 8</h1>
 
-/* ===========================
-   SUBJECT CARD
-=========================== */
+<p>BEU Notes & Study Materials</p>
 
-.subject-card{
-background:#fff;
-border-radius:20px;
-padding:25px;
-border-left:6px solid #0d6efd;
-box-shadow:0 10px 30px rgba(0,0,0,.12);
-transition:.35s;
+</div>
 
-display:flex;
-flex-direction:column;
-justify-content:space-between;
+<div class="subject-container">
 
-min-height:220px;
-}
+<div class="subject-card">
+<div>
+<h2>📚 Open Elective - III</h2>
+</div>
+<a href="open elective-3.pdf" class="pdf-btn" target="_blank">
+📄 Open PDF
+</a>
+</div>
 
-.subject-card:hover{
-transform:translateY(-8px);
-box-shadow:0 20px 40px rgba(13,110,253,.25);
-}
+<div class="subject-card">
+<div>
+<h2>📖 Open Elective - IV</h2>
+</div>
+<a href="open elective-4.pdf" class="pdf-btn" target="_blank">
+📄 Open PDF
+</a>
+</div>
 
-.subject-card h2{
-font-size:28px;
-color:#0d6efd;
-line-height:1.5;
-margin-bottom:20px;
-}
+<div class="subject-card">
+<div>
+<h2>⚙️ Program Elective - V</h2>
+</div>
+<a href="program elective-5.pdf" class="pdf-btn" target="_blank">
+📄 Open PDF
+</a>
+</div>
 
-/* ===========================
-   BUTTON
-=========================== */
+<div class="subject-card">
+<div>
+<h2>🛠️ Program Elective - VI</h2>
+</div>
+<a href="program elective-6.pdf" class="pdf-btn" target="_blank">
+📄 Open PDF
+</a>
+</div>
 
-.pdf-btn{
-display:inline-block;
-padding:12px 24px;
-background:#0d6efd;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-transition:.3s;
-margin-top:auto;
-align-self:flex-start;
-}
+<div class="subject-card">
+<div>
+<h2>📂 Project - II</h2>
+</div>
+<a href="project-2.pdf" class="pdf-btn" target="_blank">
+📄 Open PDF
+</a>
+</div>
 
-.pdf-btn:hover{
-background:#084298;
-transform:scale(1.05);
-}
+</div>
 
-/* ===========================
-   MOBILE
-=========================== */
+</body>
 
-@media(max-width:768px){
-
-.semester-header{
-padding:45px 15px;
-}
-
-.semester-header h1{
-font-size:32px;
-}
-
-.semester-header p{
-font-size:17px;
-}
-
-.subject-container{
-grid-template-columns:1fr;
-padding:15px;
-}
-
-.subject-card{
-min-height:auto;
-}
-
-.subject-card h2{
-font-size:22px;
-}
-
-.pdf-btn{
-width:100%;
-text-align:center;
-}
-
-}
+</html>
