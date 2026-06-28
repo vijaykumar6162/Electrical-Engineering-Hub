@@ -703,14 +703,13 @@ font-weight:bold;
 
 }
 .notice-board{
-width:650px;
-height:430px;
-background:#fff;
-border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,.15);
-overflow:hidden;
-display:flex;
-flex-direction:column;
+
+width:95%;
+
+max-width:1400px;
+
+margin:40px auto;
+
 }
 
 .notice-board h2{
