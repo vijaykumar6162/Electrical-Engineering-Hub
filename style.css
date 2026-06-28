@@ -359,3 +359,93 @@ color:#666;
 font-size:15px;
 
 }
+/* ===========================
+   STATISTICS
+=========================== */
+
+.stats{
+
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:60px 20px;
+
+}
+
+.stat-box{
+
+width:220px;
+background:white;
+padding:35px;
+text-align:center;
+border-radius:20px;
+box-shadow:0 12px 30px rgba(0,0,0,.12);
+transition:.3s;
+
+}
+
+.stat-box:hover{
+
+transform:translateY(-10px);
+
+}
+
+.stat-box h2{
+
+font-size:42px;
+color:#0d6efd;
+
+}
+
+.stat-box p{
+
+margin-top:10px;
+font-size:18px;
+
+}
+
+/* ===========================
+   SEMESTER
+=========================== */
+
+.section-title{
+
+text-align:center;
+font-size:42px;
+margin:70px 0 40px;
+color:#0d6efd;
+
+}
+
+.semester-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:0 40px 80px;
+
+}
+
+.semester-card{
+
+background:white;
+padding:35px;
+text-align:center;
+border-radius:20px;
+text-decoration:none;
+font-size:24px;
+font-weight:bold;
+color:#0d6efd;
+box-shadow:0 12px 30px rgba(0,0,0,.12);
+transition:.3s;
+
+}
+
+.semester-card:hover{
+
+background:#0d6efd;
+color:white;
+transform:translateY(-10px);
+
+}
