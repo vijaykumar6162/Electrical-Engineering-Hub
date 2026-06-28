@@ -560,3 +560,134 @@ footer h2{
 margin-bottom:10px;
 
 }
+/* ===========================
+   SCROLL BUTTON
+=========================== */
+
+#topBtn{
+
+position:fixed;
+bottom:25px;
+right:25px;
+
+width:55px;
+height:55px;
+
+border:none;
+border-radius:50%;
+
+background:#0d6efd;
+color:white;
+
+font-size:24px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+background:#ff3b30;
+
+transform:scale(1.1);
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.navbar{
+
+padding:15px 20px;
+flex-direction:column;
+height:auto;
+
+}
+
+.nav-menu{
+
+flex-direction:column;
+gap:15px;
+margin-top:15px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.search-box{
+
+flex-direction:column;
+
+}
+
+.search-box input{
+
+width:100%;
+border-radius:50px;
+margin-bottom:10px;
+
+}
+
+.search-box button{
+
+border-radius:50px;
+
+}
+
+.top-card{
+
+width:100%;
+
+}
+
+.stat-box{
+
+width:100%;
+
+}
+
+.semester-card{
+
+font-size:20px;
+
+}
+
+.pyq-card{
+
+font-size:20px;
+
+}
+
+.founder{
+
+text-align:center;
+
+}
+
+.founder-img{
+
+width:220px;
+height:220px;
+
+}
+
+}
