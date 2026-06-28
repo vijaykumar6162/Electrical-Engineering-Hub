@@ -925,3 +925,90 @@ font-size:18px;
 color:#555;
 line-height:1.7;
 }
+/* ===== Top Cards ===== */
+
+.top-section{
+display:flex;
+justify-content:center;
+align-items:stretch;
+gap:25px;
+flex-wrap:wrap;
+margin:40px auto;
+max-width:1400px;
+}
+
+/* ===== Profile Card ===== */
+
+.profile-card{
+
+width:280px;
+
+height:430px;
+
+background:#fff;
+
+border-radius:20px;
+
+padding:30px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+transition:.3s;
+
+}
+
+.profile-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.profile-photo{
+
+width:120px;
+
+height:120px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:4px solid #0d6efd;
+
+margin-bottom:20px;
+
+}
+
+.profile-card h2{
+
+font-size:32px;
+
+color:#0d6efd;
+
+margin-bottom:10px;
+
+}
+
+.profile-card h4{
+
+font-size:19px;
+
+color:#222;
+
+margin-bottom:15px;
+
+line-height:1.5;
+
+}
+
+.profile-card p{
+
+font-size:17px;
+
+color:#555;
+
+word-break:break-word;
+
+}
