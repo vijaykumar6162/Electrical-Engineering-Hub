@@ -822,3 +822,10 @@ max-width:350px;
 }
 
 }
+.channel-logo{
+width:120px;
+height:120px;
+border-radius:50%;
+margin-bottom:15px;
+object-fit:cover;
+}
