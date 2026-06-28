@@ -874,3 +874,16 @@ color:#777;
 margin-left:10px;
 white-space:nowrap;
 }
+.notice-text{
+flex:1;
+font-size:17px;
+font-weight:600;
+color:#222;
+margin-left:12px;
+}
+
+.icon{
+font-size:22px;
+width:30px;
+text-align:center;
+}
