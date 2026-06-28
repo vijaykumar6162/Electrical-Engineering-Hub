@@ -449,3 +449,114 @@ color:white;
 transform:translateY(-10px);
 
 }
+/* ===========================
+   PYQ
+=========================== */
+
+.pyq-section{
+
+padding:80px 40px;
+
+}
+
+.pyq-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+
+}
+
+.pyq-card{
+
+background:white;
+padding:35px;
+text-align:center;
+text-decoration:none;
+font-size:22px;
+font-weight:bold;
+border-radius:20px;
+color:#0d6efd;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+transition:.3s;
+
+}
+
+.pyq-card:hover{
+
+background:#0d6efd;
+color:white;
+transform:translateY(-10px);
+
+}
+
+/* ===========================
+   FOUNDER
+=========================== */
+
+.founder{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:50px;
+padding:100px 40px;
+flex-wrap:wrap;
+
+}
+
+.founder-img{
+
+width:260px;
+height:260px;
+border-radius:20px;
+object-fit:cover;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.founder-text{
+
+max-width:600px;
+
+}
+
+.founder-text h2{
+
+font-size:42px;
+color:#0d6efd;
+
+}
+
+.founder-text h3{
+
+margin:15px 0;
+font-size:26px;
+
+}
+
+.founder-text p{
+
+font-size:20px;
+line-height:1.8;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:40px;
+
+}
+
+footer h2{
+
+margin-bottom:10px;
+
+}
