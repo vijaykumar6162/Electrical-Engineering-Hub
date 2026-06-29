@@ -1,0 +1,239 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#eef5ff,#dbeafe);
+color:#222;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.hero{
+
+background:linear-gradient(135deg,#0f172a,#2563eb);
+color:white;
+padding:60px 20px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,.20);
+
+}
+
+.hero h1{
+
+font-size:45px;
+margin-bottom:10px;
+
+}
+
+.hero p{
+
+font-size:20px;
+opacity:.9;
+margin-bottom:30px;
+
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.search-box{
+
+max-width:500px;
+margin:auto;
+
+}
+
+.search-box input{
+
+width:100%;
+padding:15px 20px;
+border:none;
+outline:none;
+border-radius:50px;
+font-size:17px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+
+max-width:1300px;
+margin:50px auto;
+padding:20px;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(10px);
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 12px 35px rgba(0,0,0,.12);
+
+transition:.35s;
+
+border-left:6px solid #2563eb;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 18px 40px rgba(37,99,235,.30);
+
+}
+
+.card h2{
+
+color:#2563eb;
+font-size:28px;
+margin-bottom:12px;
+
+}
+
+.card p{
+
+color:#666;
+margin-bottom:20px;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+
+display:block;
+
+padding:13px;
+
+margin-top:12px;
+
+text-align:center;
+
+text-decoration:none;
+
+font-weight:bold;
+
+border-radius:10px;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.green{
+
+background:#16a34a;
+
+}
+
+.green:hover{
+
+background:#15803d;
+
+}
+
+.orange{
+
+background:#ea580c;
+
+}
+
+.orange:hover{
+
+background:#c2410c;
+
+}
+
+.red{
+
+background:#dc2626;
+
+}
+
+.red:hover{
+
+background:#b91c1c;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:60px;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+.card h2{
+
+font-size:22px;
+
+}
+
+}
