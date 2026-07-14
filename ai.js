@@ -1,11 +1,31 @@
-function sendQuestion(){
+function sendQuestion() {
 
-let q=document.getElementById("question").value;
+    let question = document.getElementById("question").value;
 
-document.getElementById("chat").innerHTML+=
-"<p><b>You:</b> "+q+"</p>";
+    if (question.trim() === "") {
+        alert("Please enter a question.");
+        return;
+    }
 
-document.getElementById("chat").innerHTML+=
-"<p><b>AI:</b> Processing...</p>";
+    let chat = document.getElementById("chat");
 
+    // User Message
+    chat.innerHTML += `
+        <div class="user-message">
+            ${question}
+        </div>
+    `;
+
+    // AI Reply (Temporary)
+    chat.innerHTML += `
+        <div class="ai-message">
+            🤖 AI: I received your question:<br><br>
+            <b>${question}</b><br><br>
+            (AI response will be added in the next step.)
+        </div>
+    `;
+
+    chat.scrollTop = chat.scrollHeight;
+
+    document.getElementById("question").value = "";
 }
