@@ -506,13 +506,13 @@ flex-wrap:wrap;
 }
 
 .founder-img{
-    width:320px;
-    aspect-ratio:4/5;
+    width:300px;
+    height:380px;
     border-radius:20px;
-    object-fit:cover;
-    object-position:center top;
+    object-fit:contain;
+    object-position:center;
+    background:#fff;
     box-shadow:0 15px 35px rgba(0,0,0,.15);
-    display:block;
 }
 
 .founder-text{
