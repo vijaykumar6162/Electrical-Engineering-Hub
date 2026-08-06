@@ -506,13 +506,13 @@ flex-wrap:wrap;
 }
 
 .founder-img{
-
-width:260px;
-height:260px;
-border-radius:20px;
-object-fit:cover;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
-
+    width:320px;
+    aspect-ratio:4/5;
+    border-radius:20px;
+    object-fit:cover;
+    object-position:center top;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    display:block;
 }
 
 .founder-text{
@@ -684,10 +684,8 @@ text-align:center;
 }
 
 .founder-img{
-
-width:220px;
-height:220px;
-
+    width:240px;
+    aspect-ratio:4/5;
 }
 
 }
